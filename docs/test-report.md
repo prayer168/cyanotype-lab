@@ -60,6 +60,7 @@
 - GitHub Pages 子路徑預覽：`test-results/desktop/pages-subpath-preview.png`
 - 公開版手機模擬：`test-results/mobile/public-page-4.png`
 - 第 8 頁桌機／平板／手機：`test-results/desktop/page-8.png`、`test-results/tablet/page-8.png`、`test-results/mobile/page-8.png`
+- 公開版第 8 頁手機：`test-results/mobile/public-page-8.png`
 
 ## GitHub Pages 公開版驗證
 
@@ -67,7 +68,9 @@
 - 公開網址：`https://prayer168.github.io/cyanotype-lab/`
 - 發布方式：`main` 推送後，由 GitHub Actions 執行 `npm ci`、內容驗證、Vite build、Pages artifact 上傳與部署。
 - 首次成功 workflow run：`https://github.com/prayer168/cyanotype-lab/actions/runs/29645326766`
-- 公開版以 390×844 逐一切換七頁，scrollWidth 均為 390px；主視覺、素材板與藝術示例的 naturalWidth 均大於 0。
+- 0.2.0 第 8 頁成功 workflow run：`https://github.com/prayer168/cyanotype-lab/actions/runs/29646311827`
+- 公開版以 390×844 驗證第 8 頁，HTTP 200、12 張卡片、12 個連結、scrollWidth 390px，且瀏覽器 console 無錯誤；進度正確顯示「第 8 站，共 8 站」。
+- 先前公開版亦以 390×844 逐一切換前七頁，scrollWidth 均為 390px；主視覺、素材板與藝術示例的 naturalWidth 均大於 0。
 - 公開模擬器可加入不透光蕨葉與半透明羽毛，完成相對曝光量 50% 的模擬。
 
 ## 已知模型限制
