@@ -16,6 +16,9 @@
 | 錯誤覆蓋層 | Vite／Webpack／Next overlay selector | 無 |
 | 瀏覽器錯誤 | `window.__consoleErrors` | 空陣列 |
 | 外部字型依賴 | 資源請求清單 | 無；使用本機中文字型堆疊 |
+| GitHub Pages workflow | `Deploy cyanotype lab to GitHub Pages` | 通過；安裝、內容驗證、建置、上傳與部署全部成功 |
+| 公開網站 | `https://prayer168.github.io/cyanotype-lab/` | HTTP 200，標題、canonical、JS、CSS 與圖片正常 |
+| 社群分享圖 | 公開 1200×630 JPEG | HTTP 200，Content-Length 250059 bytes |
 
 ## Viewport 與目視檢查
 
@@ -51,10 +54,20 @@
 - 平板重點頁：`test-results/tablet/page-1.png`、`page-4.png`、`page-6.png`
 - 手機重點頁：`test-results/mobile/page-1.png`、`page-2.png`、`page-4.png`、`page-5.png`、`page-7-fixed.png`
 - 最終 WebP 與手機首頁：`test-results/mobile/final-page-1.png`
+- GitHub Pages 子路徑預覽：`test-results/desktop/pages-subpath-preview.png`
+- 公開版手機模擬：`test-results/mobile/public-page-4.png`
+
+## GitHub Pages 公開版驗證
+
+- Repository：`https://github.com/prayer168/cyanotype-lab`
+- 公開網址：`https://prayer168.github.io/cyanotype-lab/`
+- 發布方式：`main` 推送後，由 GitHub Actions 執行 `npm ci`、內容驗證、Vite build、Pages artifact 上傳與部署。
+- 首次成功 workflow run：`https://github.com/prayer168/cyanotype-lab/actions/runs/29645326766`
+- 公開版以 390×844 逐一切換七頁，scrollWidth 均為 390px；主視覺、素材板與藝術示例的 naturalWidth 均大於 0。
+- 公開模擬器可加入不透光蕨葉與半透明羽毛，完成相對曝光量 50% 的模擬。
 
 ## 已知模型限制
 
 - 線上模擬只呈現方向性關係，不預測真實曝光分鐘數。
 - 真實結果仍受紙張配方、UV 強度、雲量、接觸緊密度、水洗與氧化影響。
 - 作品照片只在當前瀏覽器頁面預覽，不會保存或上傳。
-- 本次未部署公開網站；公開網址、Open Graph 與社群分享縮圖不在本次範圍。
