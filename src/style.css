@@ -205,6 +205,29 @@ input[type='range'] { width: 100%; accent-color: var(--blue-700); }
 .upload-preview img { width: 100%; max-height: 420px; object-fit: contain; }
 .quiz h3 { margin-top: 0; color: var(--blue-950); font: 900 1.7rem 'Noto Serif TC', 'Source Han Serif TC', 'PMingLiU', serif; }.quiz fieldset { margin: 0 0 25px; }.quiz-result { margin-top: 16px; padding: 16px; border-radius: 8px; background: #e8eeed; color: #4d6273; line-height: 1.7; }
 
+.inspiration-heading { max-width: 980px; }
+.looking-guide { margin: 30px 0; padding: clamp(24px, 4vw, 38px); border-radius: 16px; background: var(--blue-950); color: white; box-shadow: var(--shadow); }
+.looking-guide .step-label { color: #8fd5da; }
+.looking-guide ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0 0; padding: 0; list-style: none; }
+.looking-guide li { min-width: 0; padding: 18px; border: 1px solid rgba(255,255,255,.16); border-radius: 10px; background: rgba(255,255,255,.07); }
+.looking-guide strong { display: block; margin-bottom: 8px; color: var(--sun); font-size: .78rem; }
+.looking-guide span { color: #e4eff2; line-height: 1.65; }
+.inspiration-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.inspiration-card { min-width: 0; padding: 25px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); box-shadow: 0 10px 28px rgba(3,44,82,.06); }
+.inspiration-card::before { content: ''; width: 54px; height: 5px; margin-bottom: 18px; border-radius: 99px; background: linear-gradient(90deg, var(--blue-700), #6cc8d0); }
+.resource-meta { display: flex; justify-content: space-between; gap: 12px; align-items: center; color: var(--blue-500); }
+.resource-meta > span { font: 900 1.25rem/1 'Noto Serif TC', 'Source Han Serif TC', 'PMingLiU', serif; }
+.resource-meta small { color: #718493; font-size: .66rem; font-weight: 800; text-align: right; }
+.inspiration-card h3 { margin: 22px 0 10px; color: var(--blue-950); font: 900 1.35rem/1.35 'Noto Serif TC', 'Source Han Serif TC', 'PMingLiU', serif; overflow-wrap: anywhere; }
+.resource-focus { margin: 0 0 14px; color: var(--blue-700) !important; font-size: .82rem; font-weight: 800; }
+.inspiration-card > p:not(.resource-focus) { margin: 0 0 22px; color: #566c7d; line-height: 1.75; }
+.inspiration-card a { min-height: 48px; margin-top: auto; padding: 12px 14px; display: flex; justify-content: space-between; gap: 12px; align-items: center; border-radius: 8px; background: #e5eeee; color: var(--blue-900); font-size: .82rem; font-weight: 900; text-decoration: none; }
+.inspiration-card a:hover { background: var(--blue-900); color: white; }
+.inspiration-card a:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+.inspiration-challenge { margin-top: 30px; padding: clamp(28px, 5vw, 46px); display: grid; grid-template-columns: .8fr 1.2fr; gap: 34px; align-items: center; border-radius: 16px; background: #d7eceb; }
+.inspiration-challenge h3 { margin: 8px 0 0; color: var(--blue-950); font: 900 1.5rem/1.45 'Noto Serif TC', 'Source Han Serif TC', 'PMingLiU', serif; }
+.inspiration-challenge > p { margin: 0; color: #4f6879; line-height: 1.8; }
+
 .lesson-footer { padding: 24px clamp(18px, 4vw, 64px); display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid var(--line); background: var(--paper); color: #5e7282; font-size: .8rem; }
 dialog { width: min(560px, calc(100% - 28px)); padding: 28px; border: 0; border-radius: 15px; color: var(--ink); box-shadow: 0 30px 90px rgba(0,0,0,.3); }.dialog-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; }.dialog h2 { color: var(--blue-950); }.dialog-head button { width: 40px; height: 40px; border: 0; border-radius: 50%; background: #e7eeed; cursor: pointer; font-size: 1.5rem; }dialog p { line-height: 1.75; }dialog::backdrop { background: rgba(2,31,61,.68); }
 
@@ -216,6 +239,7 @@ dialog { width: min(560px, calc(100% - 28px)); padding: 28px; border: 0; border-
   .simulator { grid-template-columns: 280px 1fr; }
   .cyanotype-paper { height: 480px; }
   .art-hero { grid-template-columns: 1fr; }.art-hero img { height: 380px; }.art-hero > div { padding: 28px; }
+  .inspiration-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -231,6 +255,8 @@ dialog { width: min(560px, calc(100% - 28px)); padding: 28px; border: 0; border-
   .role-banner { flex-direction: column; }.real-steps li { grid-template-columns: 45px 1fr; padding: 18px; }.safety-grid, .art-principles { grid-template-columns: 1fr; }.safety-card { grid-template-columns: 40px 1fr; padding: 18px; }
   .art-hero img { height: 300px; }.prompt-maker { align-items: stretch; flex-direction: column; }.prompt-maker .primary-button { width: 100%; }
   .reflection-grid { min-width: 0; }
+  .looking-guide ol, .inspiration-grid, .inspiration-challenge { grid-template-columns: 1fr; }
+  .inspiration-challenge { gap: 16px; }
   .lesson-footer { flex-direction: column; text-align: center; }
 }
 

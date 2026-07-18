@@ -2,6 +2,7 @@ import './style.css';
 
 const tabs = [...document.querySelectorAll('.tab')];
 const pages = [...document.querySelectorAll('.lesson-page')];
+const totalPages = tabs.length;
 const progressLabel = document.querySelector('#progress-label');
 const progressFill = document.querySelector('#progress-fill');
 
@@ -18,8 +19,8 @@ function showPage(pageNumber, focusTab = false) {
     page.classList.toggle('is-active', active);
     page.hidden = !active;
   });
-  progressLabel.textContent = `第 ${pageNumber} 站，共 7 站`;
-  progressFill.style.width = `${(pageNumber / 7) * 100}%`;
+  progressLabel.textContent = `第 ${pageNumber} 站，共 ${totalPages} 站`;
+  progressFill.style.width = `${(pageNumber / totalPages) * 100}%`;
   document.querySelector('.lesson-nav').scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 }
 

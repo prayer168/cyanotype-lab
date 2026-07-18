@@ -54,3 +54,55 @@
 - 真實曝光沒有固定分鐘數；紙張配方、UV 強度、雲量、接觸緊密度、水洗與氧化都可能影響結果。
 - 「感光材料吸收紫外線後發生變化」是中高年級說法；教師延伸資料才使用鐵(III)還原、鐵(II)與普魯士藍等微觀描述。
 - 安全程序以預塗紙為學生預設。實際產品標示與 SDS 優先於教材的一般性說明。
+
+## 「08 他山之石」外部典藏
+
+下列連結於 2026-07-18 逐一查核。第 8 頁只提供名稱、適齡中文導讀與外部連結，不下載、嵌入或重製館藏圖像；作品年代、作者、媒材與館藏內容以各機構的官方頁面為準。
+
+10. New York Public Library Digital Collections, *Photographs of British Algae: Cyanotype Impressions*.
+    https://digitalcollections.nypl.org/collections/photographs-of-british-algae-cyanotype-impression
+    用途：提供阿特金斯藻類藍曬書的完整數位瀏覽入口，觀察標本、題名與書籍結構。
+
+11. Rijksmuseum, *Photographs of British Algae. Cyanotype Impressions*, 1843–1853.
+    https://www.rijksmuseum.nl/en/collection/object/Photographs-of-British-Algae-Cyanotype-Impressions--f036f4b9a3bcf8cc6b5db1f3ccd524ad
+    用途：確認館藏本含 307 幅藍曬圖版，以及手工接觸曝光與水洗的製作脈絡。
+
+12. The Metropolitan Museum of Art, Anna Atkins, *Spiraea aruncus (Tyrol)*, 1851–1854.
+    https://www.metmuseum.org/art/collection/search/285421
+    用途：觀察植物標本的圖形節奏，以及科學記錄和藝術構圖的交會。
+
+13. Victoria and Albert Museum, “A Blueprint for the Future: Cyanotypes by Anna Atkins.”
+    https://www.vam.ac.uk/blog/caring-for-our-collections/a-blueprint-for-the-future-cyanotypes-by-anna-atkins
+    用途：比較蒲公英、罌粟、草與題名頁，理解負形、透光層次與從記錄到詮釋的轉變。
+
+14. National Gallery of Art, “Anna Atkins.”
+    https://www.nga.gov/artists/30440-anna-atkins
+    用途：查看 *Ferns. Specimen of Cyanotype*，練習描述多片蕨葉的正負形、焦點與視覺節奏。
+
+15. J. Paul Getty Museum, Anna Atkins and Anne Dixon, *Ceylon*, 1853.
+    https://www.getty.edu/art/collection/object/104KRD
+    用途：呈現阿特金斯與 Anne Dixon 的合作，以及《British and Foreign Ferns》相冊中的蕨類構圖。
+
+16. George Eastman Museum, Anna Atkins, *Carex (America)*, ca. 1850.
+    https://collections.eastman.org/objects/83623/carex-america
+    用途：觀察莎草標本的纖細邊緣、接觸影像與館藏尺寸資料。
+
+17. Smithsonian American Art Museum, Bertha E. Jaques, *Elderberry Blossoms*, 1910.
+    https://americanart.si.edu/artwork/elderberry-blossoms-34273
+    用途：將植物藍曬史延伸到 20 世紀初，觀察花、枝與方向感的構圖。
+
+18. The Metropolitan Museum of Art, Henry P. Bosse, *Pine Bend*, 1885.
+    https://www.metmuseum.org/art/collection/search/669906
+    用途：說明藍曬如何用於密西西比河測繪紀錄，同時形成具美感的河川風景。
+
+19. The Museum of Modern Art, Robert Rauschenberg and Susan Weil, *Untitled*, ca. 1950.
+    https://www.moma.org/collection/works/51779
+    用途：觀察大型人體尺度藍曬中的重疊、動勢、布料與身體負形。
+
+20. The Museum of Modern Art, “Cyanotype.”
+    https://www.moma.org/collection/terms/cyanotype
+    用途：以同一技法頁串聯 1853 至 2013 年的館藏，跨時代比較植物、人體、草圖與概念作品。
+
+21. Getty, “Capturing the Feeling of the Ocean on Paper.”
+    https://www.getty.edu/news/capturing-the-feeling-of-the-ocean-on-paper/
+    用途：以海洋科學家兼藝術家 Oriana Poindexter 的創作，連結標本資料、環境觀察與情感表達。

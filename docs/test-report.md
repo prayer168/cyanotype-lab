@@ -2,7 +2,7 @@
 
 測試日期：2026-07-18（Asia/Taipei）
 本機路徑：`D:\我的雲端硬碟\google drive\000000000backup\0000000000數位教材\Blue-print`
-版本：0.1.0
+版本：0.2.0
 執行環境：Windows、Node.js v24.15.0、npm 11.12.1、Vite 7.3.6、agent-browser 0.32.2（Chromium）
 
 ## 自動檢查與正式建置
@@ -19,14 +19,15 @@
 | GitHub Pages workflow | `Deploy cyanotype lab to GitHub Pages` | 通過；安裝、內容驗證、建置、上傳與部署全部成功 |
 | 公開網站 | `https://prayer168.github.io/cyanotype-lab/` | HTTP 200，標題、canonical、JS、CSS 與圖片正常 |
 | 社群分享圖 | 公開 1200×630 JPEG | HTTP 200，Content-Length 250059 bytes |
+| 第 8 頁外部連結 | 12 個 HTTPS 館藏／作品連結 | 全部具有 `target="_blank"` 與 `rel="noopener noreferrer"`；NYPL、Rijksmuseum、V&A、Getty、Smithsonian 自動 GET 為 HTTP 200；The Met、NGA、Eastman、MoMA 的防機器人回應另以官方搜尋索引與館藏頁交叉確認 |
 
 ## Viewport 與目視檢查
 
 | 尺寸 | 檢查範圍 | 結果 |
 |---|---|---|
-| 1440×1000 桌機 | 七頁籤完整頁面、主視覺、流程、預測、模擬、實作、藝術與評量 | 通過；無裁切、文字壓圖或水平溢出 |
-| 768×1024 平板 | 七頁切換與 scrollWidth、首頁、模擬、藝術頁完整截圖 | 通過；七頁 scrollWidth 均為 768px |
-| 390×844 手機 | 七頁切換與 scrollWidth、首頁、流程、模擬、實作、評量完整截圖 | 修正後通過；七頁 scrollWidth 均為 390px |
+| 1440×1000 桌機 | 八頁籤完整切換與第 8 頁 12 張典藏卡片 | 通過；八頁 scrollWidth 均為 1440px，無裁切、文字壓圖或水平溢出 |
+| 768×1024 平板 | 八頁切換與第 8 頁雙欄卡片 | 通過；八頁 scrollWidth 均為 768px |
+| 390×844 手機 | 八頁切換與第 8 頁單欄卡片 | 通過；八頁 scrollWidth 均為 390px |
 
 手機第 7 頁初測時，原生檔案輸入的最小內容寬度使表單右側多出 21px。修正表單 `min-width` 與檔案輸入寬度後，以相同 390×844 條件重測，表單右緣為 378px，頁面 scrollWidth 回到 390px。
 
@@ -35,6 +36,8 @@
 | 活動 | 操作 | 成功證據 |
 |---|---|---|
 | 頁籤 | 點擊與鍵盤左右方向鍵 | 正確更新 `aria-selected`、tabpanel 與學習進度 |
+| 第 8 頁導覽 | 從第 7 頁籤按右方向鍵 | 焦點與選取同步移至 `tab-8`，第 8 頁取消 hidden，進度顯示「第 8 站，共 8 站」 |
+| 全球典藏卡片 | 計數與連結屬性檢查 | 12 張卡片、12 個唯一 HTTPS 連結；皆在新分頁安全開啟 |
 | 首頁推論 | 選擇三個解釋 | 正確答案提供證據式回饋；錯誤答案提示重新觀察，不直接洩漏完整流程 |
 | 四階段流程 | 上一階段、下一階段、播放、暫停、重播 | 可達階段 4；標題、描述、aria-label 與畫面同步 |
 | 預測任務 | 選不透光素材並填理由 | 顯示合理預測回饋；未填理由會阻止送出 |
@@ -56,6 +59,7 @@
 - 最終 WebP 與手機首頁：`test-results/mobile/final-page-1.png`
 - GitHub Pages 子路徑預覽：`test-results/desktop/pages-subpath-preview.png`
 - 公開版手機模擬：`test-results/mobile/public-page-4.png`
+- 第 8 頁桌機／平板／手機：`test-results/desktop/page-8.png`、`test-results/tablet/page-8.png`、`test-results/mobile/page-8.png`
 
 ## GitHub Pages 公開版驗證
 
