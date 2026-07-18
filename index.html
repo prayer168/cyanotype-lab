@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#073f72" />
+    <meta name="description" content="給國小中高年級的藍曬圖科學與藝術互動教材：從光與遮蔽物的預測，到線上模擬與安全實作。" />
+    <link rel="canonical" href="https://prayer168.github.io/cyanotype-lab/" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="藍曬圖實驗室" />
+    <meta property="og:title" content="陽光留下的藍色影像｜藍曬圖實驗室" />
+    <meta property="og:description" content="給國小中高年級的藍曬圖科學與藝術互動教材：預測、模擬、真實實作與藝術創作。" />
+    <meta property="og:url" content="https://prayer168.github.io/cyanotype-lab/" />
+    <meta property="og:image" content="https://prayer168.github.io/cyanotype-lab/assets/cyanotype-social-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="深藍色藍曬紙右側排列蕨類、葉片、羽毛、蕾絲與幾何遮罩，左側保留大片藍色空間。" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="陽光留下的藍色影像｜藍曬圖實驗室" />
+    <meta name="twitter:description" content="給國小中高年級的藍曬圖科學與藝術互動教材。" />
+    <meta name="twitter:image" content="https://prayer168.github.io/cyanotype-lab/assets/cyanotype-social-preview.jpg" />
+    <meta name="twitter:image:alt" content="藍曬植物、羽毛與蕾絲構成的教學網站分享圖。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23073f72'/%3E%3Ccircle cx='20' cy='19' r='9' fill='%23f4be45'/%3E%3Cpath d='M13 53c11-8 14-21 15-31 8 8 14 19 23 28-13-2-23 0-38 3Z' fill='%23d7f1ef'/%3E%3C/svg%3E" />
+    <title>陽光留下的藍色影像｜藍曬圖實驗室</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#lesson-main">跳到教材內容</a>
+    <div id="app">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">☀</span>
+          <div>
+            <p class="eyebrow">SCIENCE × ART</p>
+            <p class="brand-title">藍曬圖實驗室</p>
+          </div>
+        </div>
+        <div class="header-progress" aria-label="學習進度">
+          <span id="progress-label">第 1 站，共 7 站</span>
+          <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+        </div>
+      </header>
+
+      <nav class="lesson-nav" aria-label="教材頁籤">
+        <div class="tab-list" role="tablist" aria-orientation="horizontal">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="page-1" id="tab-1" tabindex="0" data-page="1"><span>01</span>藍色影像之謎</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="page-2" id="tab-2" tabindex="-1" data-page="2"><span>02</span>光如何留下影像</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="page-3" id="tab-3" tabindex="-1" data-page="3"><span>03</span>先預測再曝光</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="page-4" id="tab-4" tabindex="-1" data-page="4"><span>04</span>線上藍曬實驗室</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="page-5" id="tab-5" tabindex="-1" data-page="5"><span>05</span>真實藍曬實作</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="page-6" id="tab-6" tabindex="-1" data-page="6"><span>06</span>我的藝術工作室</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="page-7" id="tab-7" tabindex="-1" data-page="7"><span>07</span>作品觀察與挑戰</button>
+        </div>
+      </nav>
+
+      <main id="lesson-main">
+        <section class="lesson-page is-active" id="page-1" role="tabpanel" aria-labelledby="tab-1" data-page="1">
+          <div class="hero">
+            <img src="/assets/cyanotype-hero.webp" alt="深藍色藍曬紙上呈現白色蕨類、葉片、羽毛、蕾絲與幾何形狀，部分半透明素材留下淺藍細節。" />
+            <div class="hero-copy">
+              <p class="kicker">從一張藍色影像開始</p>
+              <h1>陽光，怎麼把<br /><em>影子留下來？</em></h1>
+              <p>這不是用藍色顏料畫的。先找證據，再進入光與化學的藍曬世界。</p>
+              <button class="primary-button" type="button" data-jump="observation">開始觀察 <span aria-hidden="true">↓</span></button>
+            </div>
+            <p class="image-credit">Image 2.0 生成教學圖像｜示意藍曬構圖</p>
+          </div>
+
+          <div class="content-wrap" id="observation">
+            <div class="section-heading">
+              <p class="step-label">觀察任務</p>
+              <h2>先別急著找答案</h2>
+              <p>看主視覺中的深藍、淺藍與白色區域。哪一個推論最值得先測試？</p>
+            </div>
+            <div class="evidence-grid" role="group" aria-label="選擇最值得測試的推論">
+              <button class="evidence-card" type="button" data-observation="paint">
+                <span class="card-index">A</span><strong>有人用白色顏料畫出植物</strong><small>這能解釋羽毛與葉脈的透明層次嗎？</small>
+              </button>
+              <button class="evidence-card" type="button" data-observation="light">
+                <span class="card-index">B</span><strong>素材擋住不同量的光</strong><small>這能同時解釋藍、淺藍與白色嗎？</small>
+              </button>
+              <button class="evidence-card" type="button" data-observation="temperature">
+                <span class="card-index">C</span><strong>植物讓紙張溫度降低</strong><small>如果只是溫度，幾何紙片也會一樣嗎？</small>
+              </button>
+            </div>
+            <div class="feedback" id="observation-feedback" aria-live="polite">選一個推論，再看看它能不能解釋全部證據。</div>
+
+            <div class="learning-contract">
+              <div>
+                <p class="step-label">今天會做到</p>
+                <h2>像科學家測試，像藝術家安排</h2>
+              </div>
+              <ul class="check-list">
+                <li>根據透光程度預測藍曬深淺</li>
+                <li>只改變一個條件做公平比較</li>
+                <li>用正負形、重疊與留白設計作品</li>
+                <li>根據成品證據修正原先想法</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="lesson-page" id="page-2" role="tabpanel" aria-labelledby="tab-2" data-page="2" hidden>
+          <div class="content-wrap page-top">
+            <div class="section-heading split-heading">
+              <div><p class="step-label">科學原理</p><h2>藍色不是被「照上去」的</h2></div>
+              <p class="definition">藍曬紙上的含鐵感光材料吸收紫外線後發生化學變化；水洗會帶走未形成穩定影像的材料，留下普魯士藍影像。</p>
+            </div>
+
+            <div class="process-lab">
+              <div class="process-stage" id="process-stage" data-step="0" role="img" aria-label="藍曬形成的四階段適齡示意圖，目前在準備階段">
+                <div class="stage-sun" aria-hidden="true"><span>☀</span><i></i><i></i><i></i></div>
+                <div class="stage-object" aria-hidden="true">葉片遮罩</div>
+                <div class="stage-paper" aria-hidden="true"><span>感光紙</span></div>
+                <div class="stage-water" aria-hidden="true"><span>水洗</span></div>
+                <div class="stage-result" aria-hidden="true"><span class="result-leaf"></span></div>
+              </div>
+              <div class="process-copy">
+                <p class="model-tag">適齡簡化模型｜不是微觀比例圖</p>
+                <p class="process-count" id="process-count">階段 1／4</p>
+                <h3 id="process-title">準備：遮蔽物貼近感光紙</h3>
+                <p id="process-description">遮蔽物和紙越貼近，影像邊緣通常越清楚。玻璃板或透明壓板可以減少風吹與移動。</p>
+                <div class="process-controls" aria-label="流程播放控制">
+                  <button class="icon-button" id="process-prev" type="button" aria-label="上一階段">←</button>
+                  <button class="primary-button compact" id="process-play" type="button" aria-pressed="false">播放</button>
+                  <button class="icon-button" id="process-next" type="button" aria-label="下一階段">→</button>
+                  <button class="text-button" id="process-reset" type="button">重播</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="concept-grid">
+              <article class="concept-card"><span class="concept-number">01</span><h3>照到較多紫外線</h3><p>感光材料的反應較充分，經水洗與氧化後通常形成較深的藍。</p></article>
+              <article class="concept-card"><span class="concept-number">02</span><h3>被遮住較多光</h3><p>遮光區反應較少，水洗後通常留下白色或較淡的形狀。</p></article>
+              <article class="concept-card"><span class="concept-number">03</span><h3>半透明不是固定答案</h3><p>葉脈、薄紙與網紗透光量不同，會留下從白到淺藍的多種層次。</p></article>
+            </div>
+
+            <aside class="history-note">
+              <div class="history-year">1842</div>
+              <div><p class="step-label">科學 × 藝術小史</p><h3>從赫歇爾到安娜・阿特金斯</h3><p>約翰・赫歇爾在 1842 年發表藍曬法。安娜・阿特金斯把藻類直接放在感光紙上製作影像，並於 1843 年起出版以藍曬照片完整圖解的植物學著作。</p></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="lesson-page" id="page-3" role="tabpanel" aria-labelledby="tab-3" data-page="3" hidden>
+          <div class="content-wrap page-top">
+            <div class="section-heading"><p class="step-label">預測任務</p><h2>先留下想法，再讓光回答</h2><p>公平測試要一次只改變一個條件。這一題只比較「透光程度」。</p></div>
+            <div class="prediction-layout">
+              <div class="prediction-demo" aria-label="三種素材放在感光紙上的示意">
+                <div class="mini-paper"><span class="sample opaque">厚紙星形</span><span class="sample translucent">描圖紙</span><span class="sample mesh">網紗</span></div>
+                <p>相同感光紙・相同位置・同時曝光・一起水洗</p>
+              </div>
+              <form class="prediction-form" id="prediction-form">
+                <fieldset>
+                  <legend>哪一種素材下方最可能留下最淺的區域？</legend>
+                  <label><input type="radio" name="prediction" value="opaque" /> 不透光的厚紙星形</label>
+                  <label><input type="radio" name="prediction" value="translucent" /> 半透明描圖紙</label>
+                  <label><input type="radio" name="prediction" value="mesh" /> 有孔洞的網紗</label>
+                </fieldset>
+                <label class="reason-field">我的理由<textarea id="prediction-reason" rows="3" placeholder="我認為……因為……"></textarea></label>
+                <button class="primary-button" type="submit">送出預測</button>
+                <div class="feedback" id="prediction-feedback" aria-live="polite">先選一個答案並寫下理由。</div>
+              </form>
+            </div>
+
+            <div class="fair-test">
+              <div><p class="step-label">公平測試檢查</p><h3>如果還同時改變曝光時間，會發生什麼事？</h3></div>
+              <div class="fair-options" role="group" aria-label="公平測試判斷">
+                <button type="button" data-fair="yes">仍能確定是透光程度造成</button>
+                <button type="button" data-fair="no">無法確定是哪個條件造成</button>
+              </div>
+              <p id="fair-feedback" aria-live="polite">想一想：結果改變時，我們能指出唯一原因嗎？</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="lesson-page" id="page-4" role="tabpanel" aria-labelledby="tab-4" data-page="4" hidden>
+          <div class="content-wrap page-top wide-wrap">
+            <div class="section-heading"><p class="step-label">可重複操作的簡化模型</p><h2>線上藍曬實驗室</h2><p>加入素材、選擇透光程度、調整相對曝光量，再比較結果。模擬呈現關係，不用來預測真實分鐘數。</p></div>
+            <div class="simulator">
+              <aside class="sim-controls" aria-label="模擬控制面板">
+                <div class="control-group"><h3>1　選素材</h3><div class="object-palette">
+                  <button type="button" data-add-object="fern"><img src="/assets/cyanotype-cutouts.webp" alt="" class="palette-sprite fern" /><span>蕨葉</span></button>
+                  <button type="button" data-add-object="feather"><img src="/assets/cyanotype-cutouts.webp" alt="" class="palette-sprite feather" /><span>羽毛</span></button>
+                  <button type="button" data-add-object="lace"><img src="/assets/cyanotype-cutouts.webp" alt="" class="palette-sprite lace" /><span>蕾絲</span></button>
+                </div></div>
+                <div class="control-group"><h3>2　設定新素材</h3><div class="segmented" role="group" aria-label="素材透光程度">
+                  <button class="is-selected" type="button" data-transmission="opaque" aria-pressed="true">不透光</button>
+                  <button type="button" data-transmission="translucent" aria-pressed="false">半透明</button>
+                  <button type="button" data-transmission="open" aria-pressed="false">較透光</button>
+                </div></div>
+                <label class="range-control" for="exposure"><span><strong>3　相對曝光量</strong><output id="exposure-output">50%</output></span><input id="exposure" type="range" min="10" max="100" value="50" step="10" /></label>
+                <div class="sim-actions"><button class="primary-button" id="simulate" type="button">開始模擬</button><button class="text-button" id="sim-reset" type="button">全部重設</button></div>
+              </aside>
+              <div class="sim-workspace">
+                <div class="sim-toolbar"><span id="object-count">畫面上有 0 個素材</span><span>拖曳移動；選取後可用方向鍵微調、Delete 刪除</span></div>
+                <div class="cyanotype-paper" id="cyanotype-paper" tabindex="0" aria-label="藍曬模擬紙，目前沒有素材。加入素材後可拖曳排列。">
+                  <span class="paper-hint">從左邊加入素材</span>
+                </div>
+                <div class="sim-result" id="sim-result" aria-live="polite"><strong>等待實驗</strong><span>先安排素材，再按「開始模擬」。</span></div>
+              </div>
+            </div>
+            <aside class="model-boundary"><strong>模型邊界</strong><p>真實結果還會受到紙張配方、光源紫外線強度、雲量、接觸緊密度、水洗與紙張狀態影響。模擬只固定其他條件，呈現「照光越多通常越藍、遮光越多通常越淺」。</p></aside>
+          </div>
+        </section>
+
+        <section class="lesson-page" id="page-5" role="tabpanel" aria-labelledby="tab-5" data-page="5" hidden>
+          <div class="content-wrap page-top">
+            <div class="section-heading split-heading"><div><p class="step-label">教師指導下進行</p><h2>把線上預測帶到陽光下</h2></div><p class="definition">中高年級學生建議使用預塗藍曬紙。若課程需自行塗布感光液，配製、塗布、保存與廢液處理全由教師依產品 SDS 與校內規定完成。</p></div>
+
+            <div class="role-banner"><span>學生：構圖、預測、計時、觀察、記錄</span><span>教師：材料判讀、化學品管理、安全與廢棄物處理</span></div>
+
+            <ol class="real-steps">
+              <li><span class="step-no">01</span><div><h3>在室內排好構圖</h3><p>等到準備完成才取出預塗紙。把乾燥、平整的素材放在感光面，使用透明壓板固定。</p><small>學生可做</small></div></li>
+              <li><span class="step-no">02</span><div><h3>先記錄，再曝光</h3><p>畫下或拍下構圖，記錄日期、開始時間、天氣與材料。移到戶外後才開始計時。</p><small>學生可做</small></div></li>
+              <li><span class="step-no">03</span><div><h3>讓紫外線啟動反應</h3><p>放在穩固平面，不直視太陽。曝光時間不是固定答案，依紙張說明與實際顏色判斷。</p><small>教師監督</small></div></li>
+              <li><span class="step-no">04</span><div><h3>取下素材並充分水洗</h3><p>依預塗紙產品指示，以清水洗去未反應材料；不要自行加入酸、漂白水或其他藥劑。</p><small>教師確認</small></div></li>
+              <li><span class="step-no">05</span><div><h3>平放乾燥，等待藍色加深</h3><p>濕紙很脆弱，不搓揉。乾燥與接觸空氣後，藍色常會比剛水洗時更深。</p><small>共同觀察</small></div></li>
+            </ol>
+
+            <div class="safety-grid">
+              <article class="safety-card important"><span aria-hidden="true">!</span><div><h3>化學材料</h3><p>戴護目鏡與手套、不飲食、操作後洗手。感光液不得接觸酸或漂白水；濃縮液與廢液由教師依 SDS 和當地規定處理。</p></div></article>
+              <article class="safety-card"><span aria-hidden="true">☀</span><div><h3>戶外紫外線</h3><p>縮短正午曝曬，人在陰影處等待；戴帽、穿遮蔽衣物並使用適當防曬。不可直視太陽或 UV 燈。</p></div></article>
+              <article class="safety-card"><span aria-hidden="true">▣</span><div><h3>玻璃與壓板</h3><p>優先用邊緣平滑的透明壓克力板；若使用玻璃，由教師搬運並檢查是否破損。</p></div></article>
+              <article class="safety-card"><span aria-hidden="true">≈</span><div><h3>清洗與環境</h3><p>不要把濃縮藥液直接倒入排水系統。使用預塗紙時也要遵守產品清洗與廢棄說明。</p></div></article>
+            </div>
+
+            <form class="ready-check" id="ready-check"><h3>出發前檢查</h3><label><input type="checkbox" /> 我已完成構圖與預測紀錄</label><label><input type="checkbox" /> 我知道只有教師處理感光液</label><label><input type="checkbox" /> 我準備好帽子、飲水與防曬</label><label><input type="checkbox" /> 我知道不能直視太陽或 UV 光源</label><button class="primary-button" type="submit">檢查是否可以出發</button><p id="ready-feedback" aria-live="polite">四項都確認後再進行戶外實作。</p></form>
+          </div>
+        </section>
+
+        <section class="lesson-page" id="page-6" role="tabpanel" aria-labelledby="tab-6" data-page="6" hidden>
+          <div class="content-wrap page-top">
+            <div class="section-heading"><p class="step-label">藝術創作</p><h2>藍色是一片空間，白色也是</h2><p>藍曬是一種接觸影像。你不只是「放東西」，而是在安排形狀、節奏與光可以穿過的路。</p></div>
+            <div class="art-hero">
+              <img src="/assets/cyanotype-art-studio.webp" alt="三張不同構圖的藍曬作品並列：放射狀植物、重複幾何節奏，以及留有大片藍色空間的羽毛構圖。" />
+              <div><p class="model-tag">Image 2.0 生成創作示例</p><h3>同一批素材，可以說三種故事</h3><p>示例只用來觀察構圖，不是標準答案。看看視線先落在哪裡，又沿著什麼方向移動。</p></div>
+            </div>
+            <div class="art-principles">
+              <article><span>正負形</span><h3>把「沒放素材的地方」也當成形狀</h3><p>白色輪廓是正形，周圍藍色是負形；兩者一起決定畫面。</p></article>
+              <article><span>重複與節奏</span><h3>讓相似形狀有規律，也有變化</h3><p>重複葉片，再改變大小、方向或距離，視線就會移動。</p></article>
+              <article><span>重疊與層次</span><h3>利用透光差異製造深淺</h3><p>網紗、薄紙與葉片重疊可能產生不同層次，先在線上模擬。</p></article>
+              <article><span>留白與焦點</span><h3>不要把每個角落都塞滿</h3><p>大片藍色空間能讓主要形狀更清楚，也讓作品有呼吸感。</p></article>
+            </div>
+
+            <div class="prompt-maker">
+              <div><p class="step-label">創作提案機</p><h3 id="prompt-title">一座會呼吸的森林</h3><p id="prompt-text">用三種不同大小的葉片形成由密到疏的節奏，保留一條光能穿過的藍色路徑。</p></div>
+              <button class="primary-button" id="new-prompt" type="button">換一個挑戰</button>
+            </div>
+            <label class="sketch-note">我的構圖計畫<textarea id="art-plan" rows="5" placeholder="主題是……焦點放在……我會用……製造層次……"></textarea><span id="save-status" aria-live="polite">內容會自動保存在這台裝置。</span></label>
+          </div>
+        </section>
+
+        <section class="lesson-page" id="page-7" role="tabpanel" aria-labelledby="tab-7" data-page="7" hidden>
+          <div class="content-wrap page-top">
+            <div class="section-heading"><p class="step-label">成功證據</p><h2>讓作品回答原來的問題</h2><p>成品不是結束，而是用來比較預測、找出證據、修正解釋。</p></div>
+            <div class="reflection-grid">
+              <form class="reflection-form" id="reflection-form">
+                <label>我原來預測……<textarea id="reflection-before" rows="2"></textarea></label>
+                <label>作品中最重要的證據是……<textarea id="reflection-evidence" rows="2"></textarea></label>
+                <label>所以我現在認為……<textarea id="reflection-after" rows="2"></textarea></label>
+                <label class="upload-label">加入作品照片（只在本機預覽）<input type="file" id="art-upload" accept="image/png,image/jpeg,image/webp" /></label>
+                <div class="upload-preview" id="upload-preview"><span>尚未選擇作品照片</span></div>
+              </form>
+
+              <form class="quiz" id="quiz-form">
+                <h3>概念挑戰</h3>
+                <fieldset><legend>1. 哪個區域通常會形成較深的藍？</legend><label><input type="radio" name="q1" value="a" /> 被不透光素材完整遮住</label><label><input type="radio" name="q1" value="b" /> 接收到較多紫外線</label></fieldset>
+                <fieldset><legend>2. 比較素材透光程度時，哪個設計最公平？</legend><label><input type="radio" name="q2" value="a" /> 同時改變素材與曝光量</label><label><input type="radio" name="q2" value="b" /> 只改變素材，其他條件盡量相同</label></fieldset>
+                <fieldset><legend>3. 真實結果和線上模擬不同，第一步應該做什麼？</legend><label><input type="radio" name="q3" value="a" /> 檢查天氣、材料接觸、水洗等紀錄</label><label><input type="radio" name="q3" value="b" /> 直接認定線上模型錯誤</label></fieldset>
+                <fieldset><legend>4. 哪項最符合安全規範？</legend><label><input type="radio" name="q4" value="a" /> 學生自行混合感光液與清潔劑</label><label><input type="radio" name="q4" value="b" /> 學生使用預塗紙，化學品由教師依 SDS 管理</label></fieldset>
+                <button class="primary-button" type="submit">查看結果</button>
+                <div class="quiz-result" id="quiz-result" aria-live="polite">完成四題後查看你的學習證據。</div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="lesson-footer"><p>藍曬圖實驗室｜國小中高年級科學 × 藝術教材</p><button class="text-button" id="source-button" type="button">資料來源與模型說明</button></footer>
+      <dialog id="source-dialog"><div class="dialog-head"><h2>資料來源與模型說明</h2><button type="button" id="close-source" aria-label="關閉">×</button></div><p>教材依 Getty、Science Museum Group、Metropolitan Museum of Art、American Chemical Society、WHO 與化學品 SDS 等資料查核。完整紀錄請見專案 <code>docs/references.md</code>。</p><p>線上模擬是適齡概念模型，不計算實際化學反應速率，也不能代替產品操作說明與教師風險評估。</p></dialog>
+    </div>
+    <noscript>這份教材需要 JavaScript 才能操作頁籤、模擬與評量。</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

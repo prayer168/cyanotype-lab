@@ -1,0 +1,60 @@
+# 藍曬圖實驗室測試報告
+
+測試日期：2026-07-18（Asia/Taipei）
+本機路徑：`D:\我的雲端硬碟\google drive\000000000backup\0000000000數位教材\Blue-print`
+版本：0.1.0
+執行環境：Windows、Node.js v24.15.0、npm 11.12.1、Vite 7.3.6、agent-browser 0.32.2（Chromium）
+
+## 自動檢查與正式建置
+
+| 項目 | 指令／方法 | 結果 |
+|---|---|---|
+| 占位與必要檔案掃描 | `npm.cmd run check` | 通過；沒有中文占位字樣、開發標記、英文假文或無效連結占位 |
+| 正式建置 | `npm.cmd run build` | 通過；4 個模組完成轉換，無建置錯誤 |
+| 套件安全 | `npm.cmd audit --audit-level=high` | 0 個漏洞 |
+| 生成圖片請求 | Chromium PerformanceResourceTiming | 三個 WebP 皆回傳 HTTP 200 |
+| 錯誤覆蓋層 | Vite／Webpack／Next overlay selector | 無 |
+| 瀏覽器錯誤 | `window.__consoleErrors` | 空陣列 |
+| 外部字型依賴 | 資源請求清單 | 無；使用本機中文字型堆疊 |
+
+## Viewport 與目視檢查
+
+| 尺寸 | 檢查範圍 | 結果 |
+|---|---|---|
+| 1440×1000 桌機 | 七頁籤完整頁面、主視覺、流程、預測、模擬、實作、藝術與評量 | 通過；無裁切、文字壓圖或水平溢出 |
+| 768×1024 平板 | 七頁切換與 scrollWidth、首頁、模擬、藝術頁完整截圖 | 通過；七頁 scrollWidth 均為 768px |
+| 390×844 手機 | 七頁切換與 scrollWidth、首頁、流程、模擬、實作、評量完整截圖 | 修正後通過；七頁 scrollWidth 均為 390px |
+
+手機第 7 頁初測時，原生檔案輸入的最小內容寬度使表單右側多出 21px。修正表單 `min-width` 與檔案輸入寬度後，以相同 390×844 條件重測，表單右緣為 378px，頁面 scrollWidth 回到 390px。
+
+## 互動驗證
+
+| 活動 | 操作 | 成功證據 |
+|---|---|---|
+| 頁籤 | 點擊與鍵盤左右方向鍵 | 正確更新 `aria-selected`、tabpanel 與學習進度 |
+| 首頁推論 | 選擇三個解釋 | 正確答案提供證據式回饋；錯誤答案提示重新觀察，不直接洩漏完整流程 |
+| 四階段流程 | 上一階段、下一階段、播放、暫停、重播 | 可達階段 4；標題、描述、aria-label 與畫面同步 |
+| 預測任務 | 選不透光素材並填理由 | 顯示合理預測回饋；未填理由會阻止送出 |
+| 公平測試 | 判斷同時改變兩項條件 | 正確指出無法辨認唯一原因 |
+| 線上模擬 | 加入素材、切換透光、調曝光、開始模擬、重設 | WebP 素材可載入；曝光狀態成立；結果文字同步 |
+| 素材操作 | Pointer 拖曳、方向鍵與 Shift 微調、Delete | 位置可改變，選取框與計數同步 |
+| 安全檢查 | 四項勾選後送出 | 未完成會提示剩餘項目；完成後仍要求教師再次確認 |
+| 藝術提案 | 換題、輸入構圖計畫 | 提案循環切換；計畫寫入 localStorage |
+| 作品照片 | 選本機圖片 | 只產生本機 object URL 預覽，不上傳資料 |
+| 概念測驗 | 4 題正確答案 | 顯示 4／4 與遷移任務 |
+| 降低動畫 | 模擬 `prefers-reduced-motion: reduce` | 媒體查詢成立；流程仍能用下一步按鈕到達階段 2 |
+
+## 截圖證據
+
+- 桌機七頁：`test-results/desktop/page-1.png` 至 `page-7.png`
+- 桌機模擬後狀態：`test-results/desktop/final-page-4.webp.png`
+- 平板重點頁：`test-results/tablet/page-1.png`、`page-4.png`、`page-6.png`
+- 手機重點頁：`test-results/mobile/page-1.png`、`page-2.png`、`page-4.png`、`page-5.png`、`page-7-fixed.png`
+- 最終 WebP 與手機首頁：`test-results/mobile/final-page-1.png`
+
+## 已知模型限制
+
+- 線上模擬只呈現方向性關係，不預測真實曝光分鐘數。
+- 真實結果仍受紙張配方、UV 強度、雲量、接觸緊密度、水洗與氧化影響。
+- 作品照片只在當前瀏覽器頁面預覽，不會保存或上傳。
+- 本次未部署公開網站；公開網址、Open Graph 與社群分享縮圖不在本次範圍。
